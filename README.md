@@ -21,6 +21,7 @@ Interactive mode — asks for target & ports at runtime.
 Clone the repository and navigate to the project folder:
 
 git clone https://github.com/yourusername/port-scanner.git
+
 cd port-scanner
 
 ## Usage
