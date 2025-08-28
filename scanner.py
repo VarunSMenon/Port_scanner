@@ -2,9 +2,6 @@ import socket
 import threading
 import os
 
-# ------------------------------
-# Function to scan a single port
-# ------------------------------
 def scan_port(target, port, results):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -27,10 +24,6 @@ def scan_port(target, port, results):
     except:
         pass
 
-
-# ------------------------------
-# Main scanner function
-# ------------------------------
 def port_scanner(target, start_port, end_port, filename):
     print(f"\n🔎 Scanning {target} on ports {start_port}-{end_port}...\n")
 
@@ -55,10 +48,6 @@ def port_scanner(target, start_port, end_port, filename):
 
     print(f"\n✅ Scan complete. Results saved to {file_path}")
 
-
-# ------------------------------
-# Interactive Input
-# ------------------------------
 if __name__ == "__main__":
     target = input("Enter target (IP/Domain): ").strip()
 
@@ -80,3 +69,4 @@ if __name__ == "__main__":
         filename += ".txt"
 
     port_scanner(target, start_port, end_port, filename)
+
